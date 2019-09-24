@@ -1,0 +1,4 @@
+set(COMPONENT_SRCS "components/ebyte/ebyte.c")
+set(COMPONENT_ADD_INCLUDEDIRS "components/ebyte/include")
+
+register_component()
