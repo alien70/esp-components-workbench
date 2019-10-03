@@ -23,8 +23,8 @@ static void setup()
     set_m1_pin(M1);
     set_aux_pin(AUX);
 
-    set_txd_pin(17);
-    set_rxd_pin(16);
+    set_txd_pin(LORA_TXD);
+    set_rxd_pin(LORA_RXD);
 
     set_uart_baud_rate(_9600);
     set_parity(_8N1);
@@ -37,10 +37,9 @@ void app_main(void)
 {
     setup();
 
-    read_version();
-
     printf("Model: %02x\n", get_model());
     printf("Version: %02x\n", get_version());
     printf("Features: %02x\n", get_features());
+
     // xTaskCreate(dummy_task, "dummy_task", 1024, NULL, 10, NULL);
 }
