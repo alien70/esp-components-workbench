@@ -1,0 +1,3 @@
+[submodule "components/ebyte"]
+	path = components/ebyte
+	url = git@github.com:alien70/esp32-ebyte-library.git
