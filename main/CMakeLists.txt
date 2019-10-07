@@ -1,4 +1,8 @@
-idf_component_register(SRCS "../components/ebyte/ebyte.c"
-                            "main.c"
-                    INCLUDE_DIRS "."
-                                 "../components/ebyte/include")
+set(COMPONENT_SRCS 
+    "../components/ebyte/ebyte.c"
+    "main.c")
+set(COMPONENT_ADD_INCLUDEDIRS 
+    "../components/ebyte"
+    ".")
+                 
+register_component()
